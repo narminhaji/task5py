@@ -5,9 +5,9 @@ class MyClass:
     def Sum(self, target):
         myset = {}
         for i, num in enumerate(self.mylist):
-            difference = target - num
-            if difference in myset:
-                return [myset[difference], i]
+            dif = target - num
+            if dif in myset:
+                return [myset[dif], i]
             myset[num] = i
         return -1
 myclass = MyClass(24, 55, 2, 4, 49, 17, 13, 3)
